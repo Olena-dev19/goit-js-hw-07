@@ -30,11 +30,11 @@ const ulElem = document.querySelector('.gallery');
 
 
 function imageTemplate(item) {
-  return  `<li><img src="${item.url}" alt="${item.alt}" width="360" height="300"></li>`
+  return  `<li class = "galarry-items"><img src="${item.url}" alt="${item.alt}" width="360" height="300"></li>`
 }
 
 function imagesTemplate(items) {
-  return items.map(imageTemplate).join('\n');
+  return items.map(imageTemplate).join('');
 }
 
 const markup = imagesTemplate(images);
