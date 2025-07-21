@@ -8,7 +8,7 @@ function handleInputClick() {
     
     const inputValue = inputName.value.trim();
     if (inputValue === '') {
-        spanName.textContent = 'Anonymus';
+        spanName.textContent = 'Anonymous';
         
     } else {
        spanName.textContent = inputValue;

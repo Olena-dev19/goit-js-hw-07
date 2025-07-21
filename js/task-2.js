@@ -26,7 +26,7 @@ const images = [
 ];
 
 const ulElem = document.querySelector('.gallery');
-const liElems = document.querySelectorAll('ul li');
+
 
 
 function imageTemplate(item) {
@@ -39,7 +39,7 @@ function imagesTemplate(items) {
 
 const markup = imagesTemplate(images);
 
-ulElem.innerHTML = markup;
+ulElem.insertAdjacentHTML('beforeend', markup);
 
 
 
